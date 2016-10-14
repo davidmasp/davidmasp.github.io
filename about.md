@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: David Mas-Ponte
 permalink: /about/
 ---
 
