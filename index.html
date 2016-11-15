@@ -2,36 +2,75 @@
 <html>
 <head>
 <title>David Mas-Ponte (Master Student)</title>
- <link rel="stylesheet" href="bootstrap.min.css">
+ <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
  <style>
       h2 {font-size: 35px; font-family: 'Roboto', sans-serif;}
       h3 {font-size: 30px;font-family: 'Roboto', sans-serif;}
       h1 {font-size: 40px; font-family: 'Montserrat', sans-serif;}
-      .button1 {font-size: 20px;
-                font-family: 'Montserrat', sans-serif; }
+      #cpr {color: #ffffff;
+        text-align: center;
+        vertical-align: middle;}
+      #footer {
+        position: fixed;
+        bottom: 0;
+        /* Following styles let see the div to check it works */
+        height: 75px;
+        background-color: #1067f2;
+        width: 100%;
+      }
+      .button1 {font-size: 22px;
+                font-family: 'Montserrat', sans-serif;
+                background-color: #1067f2; /* Blau fort */
+                border: none; }
+      .profile {
+              display: block;
+              margin: auto;
+              width: 10%;
+              border-radius: 8px;
+          }
+      .end{
+        background-color: #1067f2; /* Blau fort */
+        height: 100%;
+      }
 </style>
 <script type="text/javascript" src="bootstrap.min.js"></script>
 </head>
 <body>
   <div class="row">
-    <div class="col-xs-12" style="height:150px;"></div>
+    <div class="col-xs-12" style="height:70px;"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" style="height:150px;">
+    <img class="profile" src="files/profile.jpg"></div>
   </div>
   <div class="row">
      <div class="col-sm-4 col-sm-offset-4 text-center">
        <h1>David Mas-Ponte</h1>
        <h2>M.Sc. Student</h2>
-       <h3>Computational Biology of RNA Processing</h3>
+       <h3>Computational Biology of RNA Processing @ CRG, Barcelona</h3>
+       <div class="row">
+         <div class="col-xs-12" style="height:50px;"></div>
+       </div>
        <a class="btn btn-info button1" href="mailto:david.mas@crg.eu" role="button">
-         <span class="glyphicons glyphicons-send"></span> Contact
+         <i class="glyphicon glyphicon-send"></i> Contact
        </a>
-       <a class="btn btn-info button1" href="https://davidmasp.github.io" role="button">
-         </span> Github
+       <a class="btn btn-info button1" href="https://github.com/davidmasp" target="_blank" role="button">
+          <img src="files/GitHub-Mark/PNG/GitHub-Mark-Light-32px.png" alt="" /> Github
        </a>
-       <a class="btn btn-info button1" href="files/cv.pdf" role="button">
-          CV
+       <a class="btn btn-info button1" href="files/cv.pdf" target="_blank" role="button">
+         <i class="glyphicon glyphicon-briefcase"></i>  CV
        </a>
      </div>
      </div>
+    <div class="row">
+      <div class="col-lg-11" id="footer">
+
+          <div class="col-xs-12" style="height:20px;"></div>
+          <p id="cpr"> Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2016 David Mas-Ponte </p>
+      </div>
+    </div>
 </body>
 </html>
