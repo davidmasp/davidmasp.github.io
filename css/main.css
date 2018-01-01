@@ -15,7 +15,8 @@ h1 { font-family: 'Montserrat', sans-serif;}
 .button1 {font-size: 22px;
           font-family: 'Montserrat', sans-serif;
           background-color: #002FA7; /* Blau fort */
-          border: none; }
+          border: none;
+          margin-bottom: 25px; }
 .profile {
         display: block;
         margin: auto;
