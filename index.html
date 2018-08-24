@@ -8,6 +8,7 @@
 <script src="js/bootstrap.min.js"></script>
  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lato" rel="stylesheet">
 <script type="text/javascript" src="bootstrap.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
   <div class="row">
@@ -23,16 +24,16 @@
          
       </div>
        <a class="btn btn-info button1" href="https://github.com/davidmasp" target="_blank" role="button">
-        <i class="glyphicon glyphicon-console"></i> Github
+        <i data-feather="github"></i> Github
        </a> 
        <a class="btn btn-info button1" href="files/cv.pdf" target="_blank" role="button">
-         <i class="glyphicon glyphicon-briefcase"></i>  CV
+        <i data-feather="briefcase"></i>  CV
        </a>
        <a class="btn btn-info button1" href="https://twitter.com/davidmasp" target="_blank" role="button">
-         <i class="glyphicon glyphicon-comment"></i>  @davidmasp
+        <i data-feather="at-sign"></i>  davidmasp
        </a>
        <a class="btn btn-info button1" href="https://scholar.google.es/citations?user=W3QNbCEAAAAJ&hl=ca&citsig=AMstHGSAqMiy_bltrrVGG5m7_3pAAldObA" target="_blank" role="button">
-         <i class="glyphicon glyphicon-new-window"></i>  gScholar
+        <i data-feather="external-link"></i>  gScholar
        </a>
      </div>
      </div>
@@ -42,5 +43,8 @@
           <p id="cpr"> &copy; 2016<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, David Mas-Ponte </p>
       </div>
     </div>
+    <script>
+      feather.replace()
+    </script>
 </body>
 </html>
