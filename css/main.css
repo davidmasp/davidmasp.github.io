@@ -1,12 +1,35 @@
+html {
+  font-size: 1rem;
+}
+
+
 .centralBox {
   width: 45%;
 }
 
-@media (max-width: 575px) { 
+@media (max-width: 1754px) { 
+  .centralBox {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1326px) { 
+  .centralBox {
+    width: 70%;
+  }
+}
+
+@media (max-width: 776px) { 
   .centralBox {
     width: 90%;
   }
- }
+
+  html {
+    font-size: 0.55rem;
+  }
+}
+
+
 
 
 h2 {font-family: 'Lato', sans-serif;}
