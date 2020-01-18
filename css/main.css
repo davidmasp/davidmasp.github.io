@@ -21,11 +21,15 @@ html {
 
 @media (max-width: 776px) { 
   .centralBox {
-    width: 90%;
+    width: 100%;
   }
 
   html {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
+  }
+
+  .display-2 {
+    font-size: 4.7rem;
   }
 }
 
