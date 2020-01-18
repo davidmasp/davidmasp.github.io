@@ -1,13 +1,12 @@
-@media (min-width: 1150px) {
-  /* For mobile phones: */
-  .centralBox {
-    width: 90%;
-  }
-}
-
 .centralBox {
   width: 45%;
 }
+
+@media (max-width: 575px) { 
+  .centralBox {
+    width: 90%;
+  }
+ }
 
 
 h2 {font-family: 'Lato', sans-serif;}
