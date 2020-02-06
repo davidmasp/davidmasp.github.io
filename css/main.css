@@ -94,7 +94,10 @@ p{font-family: 'Lato';}
 }
 
 
-
+.btn{
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
 .btn.btn-outline-light:active:hover,
 .btn.btn-outline-light:hover {
