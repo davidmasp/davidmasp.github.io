@@ -36,17 +36,17 @@ html {
 
 
 
-h2 {font-family: 'Lato', sans-serif;}
-h3 {font-family: 'Lato', sans-serif;
+h2 {font-family: 'Roboto', sans-serif;}
+h3 {font-family: 'Roboto', sans-serif;
   color: #ffffff;}
-h1 { font-family: 'Open Sans', sans-serif;}
+h1 { font-family: 'Montserrat', sans-serif;}
 
 .linkColor {
   color: #c6f4e8;
 }
 
 .display-2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
 }
 
@@ -55,7 +55,7 @@ body{
   background-color: #c6f4e8;
 }
 
-p{font-family: 'Lato';}
+p{font-family: 'Roboto';}
 #cpr {color: #038c9f;
   text-align: center;
   vertical-align: middle;}
