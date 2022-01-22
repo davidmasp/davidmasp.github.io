@@ -5,6 +5,11 @@ body {
     font-style: normal;
 }
 
+a {
+    color: #038C9F;
+    text-decoration: none;
+}
+
 #title-text{
     position: absolute;
     width: 466px;
@@ -49,12 +54,7 @@ body {
     color: #038C9F;
 }
 
-#link2{
-    position: absolute;
-    width: 221px;
-    height: 98px;
-    left: 268px;
-    top: 425px;
+.links{
     font-weight: normal;
     font-size: 20px;
     line-height: 23px;
@@ -63,16 +63,23 @@ body {
     padding-left:0;
 }
 
+#link2{
+    position: absolute;
+    width: 221px;
+    height: 98px;
+    left: 268px;
+    top: 425px;
+}
+
 #link1{
     position: absolute;
     width: 190px;
     height: 27px;
     left: 913px;
     top: 125px;
-
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    list-style: none;
 }
 
+.arr { 
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
