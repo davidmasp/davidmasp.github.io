@@ -1,3 +1,4 @@
+
 body {
     background: #C6F4E8;
     color: #038C9F;
@@ -10,12 +11,19 @@ a {
     text-decoration: none;
 }
 
+.left-a{
+    left: 20%;
+}
+
+.right-a{
+    left: 63%;
+}
+
 #title-text{
     position: absolute;
     width: 466px;
     height: 38px;
-    left: 268px;
-    top: 122px;
+    top: 18%;
 
     font-weight: bold;
     font-size: 22px;
@@ -28,8 +36,7 @@ a {
     position: absolute;
     width: 496px;
     height: 80px;
-    left: 268px;
-    top: 178px;
+    top: 25%;
 
     font-family: Roboto;
     font-style: normal;
@@ -44,8 +51,7 @@ a {
     position: absolute;
     width: 496px;
     height: 158px;
-    left: 268px;
-    top: 276px;
+    top: 36%;
 
     font-weight: normal;
     font-size: 24px;
@@ -67,19 +73,71 @@ a {
     position: absolute;
     width: 221px;
     height: 98px;
-    left: 268px;
-    top: 425px;
+    top: 57%;
 }
 
 #link1{
     position: absolute;
     width: 190px;
     height: 27px;
-    left: 913px;
-    top: 125px;
+    top: 18%;
 }
 
 .arr { 
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
+
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    /* background: #038C9F; */
+    text-align: center;
+}
+.location{
+    position: relative;
+    font-size: 20px;
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .left-a{
+        left: 10%;
+    }
+    .right-a{
+        left: 75%;
+    }
+    
+  }
+
+  @media screen and (max-width: 800px) {
+    #title-text{
+        top: 5%;
+    }
+    #main-text1{
+        top: 15%;
+        font-size: 22px;
+        width: 80%;
+    }
+    #main-text2{
+        top: 30%;
+        font-size: 22px;
+        width: 80%;
+    }
+    .left-a{
+        left: 10%;
+    }
+    .right-a{
+        left: 10%;
+    }
+
+    #link1{
+        top: 75%;
+    }
+    
+  }
+
