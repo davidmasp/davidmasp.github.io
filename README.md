@@ -4,6 +4,10 @@ Code for a simple intro-website, available at [david.masponte.com](http://david.
 
 ## Changelog
 
+### [1.0.2]
+
+* Adding the twitter card meta tags
+
 ### [1.0.1]
 
 * Forgot the favicon
