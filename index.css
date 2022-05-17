@@ -91,7 +91,8 @@ a {
 
 .footer{
     position: absolute;
-    width: 100%;
+    /* this was generating a fake scroll horizontal */ 
+    width: 99%; 
     height: 10%;
     bottom: 0;
     /* background: #038C9F; */
