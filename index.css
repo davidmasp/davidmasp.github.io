@@ -36,7 +36,7 @@ a {
     position: absolute;
     width: 496px;
     height: 80px;
-    top: 25%;
+    top: 30%;
 
     font-family: Roboto;
     font-style: normal;
@@ -91,7 +91,8 @@ a {
 
 .footer{
     position: absolute;
-    width: 100%;
+    /* this was generating a fake scroll horizontal */ 
+    width: 99%; 
     height: 10%;
     bottom: 0;
     /* background: #038C9F; */
@@ -119,7 +120,7 @@ a {
         top: 5%;
     }
     #main-text1{
-        top: 15%;
+        top: 25%;
         font-size: 22px;
         width: 80%;
     }
