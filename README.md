@@ -4,7 +4,7 @@ Code for a simple intro-website, available at [david.masponte.com](http://david.
 
 ## Changelog
 
-### [Unreleased]
+### [2.0.0]
 
 * Refactored the whole website using tailwind
 * added buttons instead of links
