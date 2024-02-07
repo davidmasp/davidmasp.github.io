@@ -4,6 +4,13 @@ Code for a simple intro-website, available at [david.masponte.com](http://david.
 
 ## Changelog
 
+### [2.0.0]
+
+* Refactored the whole website using tailwind
+* added buttons instead of links
+* updated my cv
+* updated my about-text
+
 ### [1.0.2]
 
 * Adding the twitter card meta tags
