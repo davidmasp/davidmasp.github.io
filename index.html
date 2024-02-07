@@ -11,12 +11,19 @@
     <meta name="twitter:card" content="summary" />
     <meta property="og:image" content="https://david.masponte.com/files/twitter_landing_page.png" />
     <title>David Mas-Ponte</title>
-    <meta name="description"
-        content="Bioinformatics from Barcelona. Find me at the major social sites at @davidmasp.">
+    <meta name="description" content="Genomics. Find me at the major social sites with @davidmasp.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url('assets/Roboto-Medium.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'RobotoSlab';
+            src: url('assets/RobotoSlab-Medium.ttf') format('truetype');
+        }
+    </style>
     <script src="https://kit.fontawesome.com/1aa0c37d34.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="icon.png">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,73 +35,98 @@
 
         gtag('config', 'G-BB5VL08CT9');
     </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'slab': ['RobotoSlab', 'sans-serif'],
+                    },
+                    colors: {
+                        greenfg: '#038C9F',
+                        greenbg: '#C6F4E8',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <p class="left-a" id="title-text">David Mas-Ponte, Ph.D.</p>
-    <p class="left-a" id="main-text1">Genomics of living things.</p>
-    <p class="left-a" id="main-text2"> Working on fancy ways to extract information from DNA.
-        Studying the molecular mechanisms of mutagenesis.</p>
-    <ul class="links right-a" id="link1">
-        <li>
-            <div class="arr">
-                <div>
-                    <i class="fa-solid fa-at"></i>
-                </div>
-                <div>
+<body class="bg-greenbg font-roboto">
+    <div class="w-full h-screen">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-auto p-4 content-center justify-stretch h-screen md:w-3/4 lg:w-3/5 xl:2/5 2xl:1/5">
+            <div class="bg-greenbg p-4 rounded justify-center">
 
-                    <a href="mailto:david.mas.p+web@gmail.com?subject=Hello there!">email</a>
-        </li>
+                <p class="font-slab text-xl text-greenfg md:text-right">David Mas-Ponte, Ph.D. </p>
+                <p class="text-left text-lg text-greenfg md:text-right">
+                    I am a postdoc with
+                    <a class="underline" href="https://www.gs.washington.edu/faculty/harris.htm">Kelley Harris</a> (UW)
+                    studying the genetic determinants on mutagenesis
+                    (why our genome changes) during
+                    reproduction, aging and cancer.
+                    I have a background in genomics and bioinformatics and I am interested in all things DNA.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <div class="self-center p-4 rounded grid grid-cols-3 gap-3 justify-stretch max-w-80 h-36">
+                    <div class="flex justify-center h-12">
+                        <button
+                            class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                            <a href="mailto:david.mas.p+web@gmail.com?subject=Hello there!">
+                                <i class="fa-solid fa-at"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="flex justify-center h-12">
+                        <button
+                            class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                            <a href="https://twitter.com/davidmasp?lang=en" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="flex justify-center h-12">
+                        <button
+                            class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                            <a href="https://github.com/davidmasp" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="flex justify-center h-12">
+                        <button
+                            class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                            <a href="files/cv.pdf" target="_blank">
+                                <i class="fa-solid fa-file"></i> cv
+                            </a>
+                        </button>
+                    </div>
+                    <div class="flex justify-center h-12">
+                        <button
+                            class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                            <a href="https://scholar.google.com/citations?hl=en&user=W3QNbCEAAAAJ" target="_blank">
+                                <i class="fa-solid fa-folder-open"></i> pub
+                            </a>
+                        </button>
+                    </div>
+                    <div class="flex justify-center h-12">
+                        <button
+                            class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                            <a href="https://davidmasp.substack.com" target="_blank">
+                                <i class="fa-solid fa-pen-nib"></i> blog
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        <li class="arr">
-            <div>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div>
-                <a href="https://twitter.com/davidmasp?lang=en" target="_blank">twitter</a>
-            </div>
-        </li>
-        <li class="arr">
-            <div>        
-                <i class="fa-brands fa-github"></i>
-            </div>
-            <div>
-                <a href="https://github.com/davidmasp" target="_blank"> github</a>
-            </div>
-        </li>
-        <li class="arr">
-            <div>
-                <i class="fa-solid fa-file"></i>
-            </div>
-            <div>
-                <a href="files/cv.pdf" target="_blank"> cv</a>
-            </div>
-        </li>
-        <li class="arr">
-            <div>
-                <i class="fa-solid fa-folder-open"></i>
-            </div>
-            <div>
-                <a href="https://scholar.google.com/citations?hl=en&user=W3QNbCEAAAAJ" target="_blank"> pub.</a>
-            </div>
-        </li>
-        <li class="arr">
-            <div>
-                <i class="fa-solid fa-pen-nib"></i>
-            </div>
-            <div>
-                <a href="https://davidmasp.substack.com" target="_blank"> blog</a>
-            </div>
-        </li>
-    </ul>
-    <div class="footer">
-        <div class='location'>
-            <p>
+        <div class="absolute bottom-10 text-center w-screen">
+            <p class="text-greenfg">
                 <i class="fa-solid fa-location-dot"></i> - Seattle, WA
             </p>
         </div>
     </div>
 </body>
-
-</html>
