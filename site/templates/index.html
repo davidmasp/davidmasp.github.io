@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="w-full h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-1 m-auto p-4 content-center justify-stretch h-screen md:w-4/5 lg:w-3/5 xl:2/5 2xl:1/5">
+        <div class="bg-greenbg p-4 rounded justify-center">
+            <p class="font-slab text-2xl text-greenfg md:text-right">David Mas-Ponte, Ph.D. </p>
+            <p class="font-slab text-lg text-greenfg md:text-right"> <i class="fa-brands fa-orcid"></i> <a href="https://orcid.org/https://orcid.org/0000-0001-7409-305X"> 0000-0001-7409-305X</a>  </p>
+            <p class="text-left text-lg text-greenfg md:text-right">
+                I am a postdoc with
+                <a class="underline" href="https://www.sottorivalab.org/">Andrea Sottoriva</a>
+                (@
+                <a class="underline" href="https://humantechnopole.it/en/">HT</a>
+                )
+                studying the
+                evolutionary rules of cancer and hunting for
+                genetic and epigenetic determinants of drug resistance.
+            </p>
+            <div class="h-2"></div>
+            <p class="text-left text-lg text-greenfg md:text-right">
+                I have a background in genomics and bioinformatics and I am interested in all things DNA.
+            </p>
+            <p class = "text-left text-lg text-greenfg md:text-right">
+                | <a class="underline" href="{{ get_url(path='@/sudoku/_index.md') }}">数独</a> |
+            </p>
+        </div>
+        <div class="flex justify-center">
+            <div class="self-center p-4 rounded grid grid-cols-3 gap-3 justify-stretch max-w-80 h-36">
+                <div class="flex justify-center h-12">
+                    <button
+                        class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                        <a href="mailto:david.mas.p+web@gmail.com?subject=Hello there!">
+                            <i class="fa-solid fa-at"></i>
+                        </a>
+                    </button>
+                </div>
+                <div class="flex justify-center h-12">
+                    <button
+                        class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                        <a href="https://bsky.app/profile/david.masponte.com" target="_blank">
+                             <i class="fa-brands fa-bluesky"></i>
+                        </a>
+                    </button>
+                </div>
+                <div class="flex justify-center h-12">
+                    <button
+                        class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                        <a href="https://github.com/davidmasp" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </button>
+                </div>
+                <div class="flex justify-center h-12">
+                    <button
+                        class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                        <a href="files/cv.pdf" target="_blank">
+                            <i class="fa-solid fa-file"></i> cv
+                        </a>
+                    </button>
+                </div>
+                <div class="flex justify-center h-12">
+                    <button
+                        class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                        <a href="{{ get_url(path='@/publications/_index.md') }}">
+                            <i class="fa-solid fa-folder-open"></i> pub
+                        </a>
+                    </button>
+                </div>
+                <div class="flex justify-center h-12">
+                    <button
+                        class="hover:bg-greenfg text-greenfg hover:text-greenbg border-greenfg font-bold py-2 px-4 border-2 rounded-full w-24 h-10">
+                        <a href="{{ get_url(path='@/blog/_index.md') }}">
+                            <i class="fa-solid fa-pen-nib"></i> blog
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute bottom-10 text-center w-screen">
+        <p class="text-greenfg">
+            <i class="fa-solid fa-location-dot"></i> - Milano
+        </p>
+    </div>
+</div>
+
+
+{% endblock content %}
+

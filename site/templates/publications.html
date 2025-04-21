@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="w-full h-screen">
+  <div class="mx-12 mt-20 md:w-3/4 lg:w-3/5">
+    <h1 class="font-slab text-2xl text-greenfg h-10">
+      {{ section.title }}
+    </h1>
+    <p class="text-greenfg">
+      See also my
+      <a class="underline" href="https://scholar.google.com/citations?hl=en&user=W3QNbCEAAAAJ" target="_blank">
+        Google Scholar
+      </a>
+      profile or my ORCID
+      <a class="underline" href="https://orcid.org/https://orcid.org/0000-0001-7409-305X" target="_blank">
+        0000-0001-7409-305X.</a>
+    </p>
+  </div>
+  <div class="mx-16 my-2 md:w-3/4 lg:w-3/5">
+    <ul>
+      {% for page in section.pages %}
+      <li>
+        <p class="text-greenfg">
+          <a href="{{ page.permalink | safe }}">{{ page.extra.lead }}, {{ page.year }}</a>
+          <a class="underline" href="https://doi.org/{{page.extra.doi}}">
+            {{page.extra.doi}}
+          </a>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="absolute inset-x-0 bottom-10 w-full">
+    <p class="text-greenfg text-center">
+      <a href="{{ get_url(path='') }}">
+        ~HOME~
+      </a>
+    </p>
+  </div>
+</div>
+{% endblock content %}

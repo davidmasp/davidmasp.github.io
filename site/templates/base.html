@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Hi, it's David." />
+    <meta property="og:description" content="Bioinformatician and science enthusiast." />
+    <meta name="twitter:creator" content="@davidmasp" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://david.masponte.com/files/twitter_landing_page.png" />
+    <title>David Mas-Ponte</title>
+    <meta name="description" content="Genomics. Find me at the major social sites with @davidmasp.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url('assets/Roboto-Medium.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'RobotoSlab';
+            src: url('assets/RobotoSlab-Medium.ttf') format('truetype');
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/1aa0c37d34.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="icon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BB5VL08CT9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BB5VL08CT9');
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'slab': ['RobotoSlab', 'sans-serif'],
+                    },
+                    colors: {
+                        greenfg: '#038C9F',
+                        greenbg: '#C6F4E8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-greenbg font-roboto">
+    {% block content %} {% endblock %}
+</body>
+</html>

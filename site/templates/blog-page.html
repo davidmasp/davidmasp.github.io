@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="font-slab text-2xl text-greenfg h-10">
+  {{ page.title }}
+</h1>
+<p class="subtitle"><strong>{{ page.date }}</strong></p>
+
+
+{{ page.content | safe }}
+
+<div class="absolute inset-x-0 bottom-10 w-full">
+  <p class="text-greenfg text-center">
+    <a href="{{ get_url(path='') }}">
+      ~HOME~
+    </a>
+  </p>
+</div>
+
+
+{% endblock content %}
+

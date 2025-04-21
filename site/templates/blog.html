@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="w-full h-screen">
+
+  <!-- 
+  
+  <div class="mx-12 mt-20 md:w-3/4 lg:w-3/5">
+    <h1 class="font-slab text-2xl text-greenfg h-10">
+      {{ section.title }}
+    </h1>
+
+    🚧 WORK IN PROGRESS, refer to my
+    <a class="underline" href="https://davidmasp.substack.com/">
+      substack
+    </a> 🚧
+
+  </div>
+    -->
+
+  <div class="mx-16 my-2 mt-20 md:w-full lg:w-full">
+    <h1 class="font-slab text-2xl text-greenfg h-10">
+      {{ section.title }}
+    </h1>
+    <div class="md:w-3/4 lg:w-3/5">
+      {% for page in section.pages %}
+      <div class="w-3/4">
+      <p class="text-greenfg text-lg">
+        <a href="{{ page.permalink | safe }}">
+          🗓️ {{ page.date }} - {{ page.title }}
+        </a>
+      </p>
+      </div>
+      <p class="text-greenfg text-md">
+        {{ page.extra.slug }}
+      </p>
+
+      {% endfor %}
+    </div>
+
+    <ul>
+      {% for page in section.pages %}
+      <li>
+        <p class="text-greenfg text-lg">
+          <a href="{{ page.permalink | safe }}">
+            {{ page.title }} - {{ page.date }}
+          </a>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="absolute inset-x-0 bottom-10 w-full">
+    <p class="text-greenfg text-center">
+      refer to my
+      <a class="underline" href="https://davidmasp.substack.com/">
+        substack
+      </a> 
+      for more content
+    </p>
+    <p class="text-greenfg text-center">
+      <a href="{{ get_url(path='') }}">
+        ~HOME~
+      </a>
+    </p>
+  </div>
+</div>
+
+{% endblock content %}
