@@ -1,0 +1,23 @@
+
+@import "tailwindcss";
+
+@theme {
+  --font-roboto: "Roboto", "sans-serif";
+  --font-slab: "Roboto Slab", "sans-serif";
+  --color-greenfg: oklch(0.59 0.1016 211.48); /* '#038C9F';*/
+  --color-greenbg: oklch(0.93 0.0499 177.52); /*'#C6F4E8';*/
+}
+
+/* You can use @apply here */
+.btn {
+  @apply text-white bg-blue-600 hover:bg-blue-800 font-bold py-2 px-4 rounded;
+}
+
+pre {
+  @apply border-2 border-greenfg rounded-xl my-4;
+}
+
+code {
+  @apply rounded-xl;
+}
+

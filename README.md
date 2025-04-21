@@ -1,4 +1,4 @@
 
 
-cd serve
+cd site
 zola serve

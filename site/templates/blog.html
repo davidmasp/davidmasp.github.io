@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="w-full h-screen">
+<div class="mt-20 box-border w-full h-screen">
 
   <!-- 
   
@@ -19,37 +19,26 @@
   </div>
     -->
 
-  <div class="mx-16 my-2 mt-20 md:w-full lg:w-full">
+  <div class="mt-20 mx-16 my-2 md:w-full lg:w-full box-border">
     <h1 class="font-slab text-2xl text-greenfg h-10">
       {{ section.title }}
     </h1>
     <div class="md:w-3/4 lg:w-3/5">
       {% for page in section.pages %}
       <div class="w-3/4">
-      <p class="text-greenfg text-lg">
+      <p class="text-greenfg text-lg mt-5">
         <a href="{{ page.permalink | safe }}">
-          🗓️ {{ page.date }} - {{ page.title }}
+          {{ page.title }}
         </a>
       </p>
       </div>
-      <p class="text-greenfg text-md">
-        {{ page.extra.slug }}
+      <p class="text-greenfg text-md ml-10">
+        <i>{{ page.extra.slug }} </i>
       </p>
 
       {% endfor %}
     </div>
 
-    <ul>
-      {% for page in section.pages %}
-      <li>
-        <p class="text-greenfg text-lg">
-          <a href="{{ page.permalink | safe }}">
-            {{ page.title }} - {{ page.date }}
-          </a>
-        </p>
-      </li>
-      {% endfor %}
-    </ul>
   </div>
 
   <div class="absolute inset-x-0 bottom-10 w-full">
@@ -60,11 +49,17 @@
       </a> 
       for more content
     </p>
-    <p class="text-greenfg text-center">
+    <p class="text-greenfg text-center text-2xl">
       <a href="{{ get_url(path='') }}">
-        ~HOME~
+        <i class="fa-solid fa-house"></i>
       </a>
     </p>
+    <style>
+      .absolute.inset-x-0.bottom-10 {
+      position: fixed;
+      bottom: 10px;
+      }
+    </style>
   </div>
 </div>
 
